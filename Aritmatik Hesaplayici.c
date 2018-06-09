@@ -4,7 +4,7 @@
 #include <string.h>
 
   #define SIZE 100
-int variables[256];
+int variables[256]; // Değişken isimlerini tek karakter olarak düşündüm
 
 typedef struct Stack {
   int top;
@@ -116,12 +116,12 @@ char top(Stack * stack) {
 int precedence(char a, char b) {
 
   int aa, bb;
-  if (a == '+' || a == '-' || a == '�')
+  if (a == '+' || a == '-' || a == 'û')
     aa = 0;
   else {
     aa = 1;
   }
-  if (b == '+' || b == '-' || b == '�')
+  if (b == '+' || b == '-' || b == 'û')
     bb = 0;
   else {
     bb = 1;
